@@ -43,6 +43,21 @@ h2 span {
     padding: 0 15px;
 }
 
+.share {
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+    /* border: 2px solid teal; */
+    position: absolute;
+    right: 20%;
+    top: 110px;
+    /* height: 50px; */
+}
+
+.fb-share-button {
+    padding-right: 10px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 150px);
@@ -79,12 +94,29 @@ h2 span {
     color: yellow;
 }
 
+.option {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
 button {
     border: none;
     cursor: pointer;
-    display: block;
-    margin: 0 auto 40px;
+    /* display: block;
+    margin: 0 auto 40px; */
     padding: 5px 20px;
+    margin-right: 50px;
+}
+
+.random {
+    /* display: flex; */
+    /* align-items: center; */
+    border: 2px solid white;
+    /* background-color: white; */
+    /* color: black; */
+    padding: 5px 10px 5px;
 }
 
 footer p {

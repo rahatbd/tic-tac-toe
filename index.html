@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rahat Rahman">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="PVb0vl4v"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <link rel="stylesheet" href="style.css">
     <title>Tic-Tac-Toe</title>
 </head>
@@ -16,18 +18,30 @@
 
     <section class="wrapper">
         <h2>Player Turn: <span class="blue" id="blue">blue</span></h2>
-        <div class="grid">
-            <span id="1"></span>
-            <span id="2"></span>
-            <span id="3"></span>
-            <span id="4"></span>
-            <span id="5"></span>
-            <span id="6"></span>
-            <span id="7"></span>
-            <span id="8"></span>
-            <span id="9"></span>
+        <div class="share">
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"
+                data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
+            </div>
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
         </div>
-        <button>Replay</button>
+        <div class="grid">
+            <span id="1" tabindex="2"></span>
+            <span id="2" tabindex="3"></span>
+            <span id="3" tabindex="4"></span>
+            <span id="4" tabindex="5"></span>
+            <span id="5" tabindex="6"></span>
+            <span id="6" tabindex="7"></span>
+            <span id="7" tabindex="8"></span>
+            <span id="8" tabindex="9"></span>
+            <span id="9" tabindex="10"></span>
+        </div>
+        <div class="option">
+            <button>Replay</button>
+            <div class="random">
+                <label for="random">Random</label>
+                <input type="checkbox" name="random" id="random" autocomplete="off" tabindex="1">
+            </div>
+        </div>
     </section>
 
     <footer>
